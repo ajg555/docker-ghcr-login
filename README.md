@@ -1,2 +1,2 @@
 # docker-ghcr-login
-Shell script for authentication on the GitHub Container Repository using tokens.
+Shell script for authentication on the GitHub Container Registry (GHCR/ghcr.io) using tokens.

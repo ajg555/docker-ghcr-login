@@ -11,7 +11,7 @@ case "$1" in
       read -p "GitHub User: " GHCR_USER
       read -p "GitHub Token: " GHCR_TOKEN
 
-      echo $GHCR_TOKEN | docker login $GHCR_SERVER -u $GHCR_TOKEN --password-stdin
+      echo $GHCR_TOKEN | docker login $GHCR_SERVER -u $GHCR_USER --password-stdin
       ;;
    --logout)
       echo "GitHub Container Registry LOGOUT!"

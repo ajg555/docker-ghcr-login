@@ -9,7 +9,7 @@ case "$1" in
       echo "GitHub Container Registry LOGIN!"
 
       read -p "GitHub User: " GHCR_USER
-      read -p "GitHub Token: " GHCR_TOKEN
+      read -p "GitHub Token: " -s GHCR_TOKEN
 
       echo $GHCR_TOKEN | docker login $GHCR_SERVER -u $GHCR_USER --password-stdin
       ;;
